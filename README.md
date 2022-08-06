@@ -7,16 +7,16 @@ Splatoon3レーティングシステム
 ```
 cp .env.sample .env
 vim .env
-docker-compose up -d
-docker-compose exec webapp bash
+docker compose up -d
+docker compose exec webapp bash
 python manage.py migrate
 python manage.py createsuperuser
 ```
 
 ## Dockerコマンド
 '''
-docker-compose up -d
-docker-compose down
-docker-compose ps
-docker-compose restart
+docker compose up -d
+docker compose down
+docker compose ps
+docker compose restart
 '''
