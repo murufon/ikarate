@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  webapp:
+    build:
+      context: "."
+    volumes:
+      - "./:/root/webapp"
+    ports:
+      - "$WEBAPP_PORT:8000"
+    command: python manage.py runserver 0.0.0.0:8000
+    environment:
+      MYSQL_DATABASE: "webapp"
+      MYSQL_USER: "webapp"
+      MYSQL_PASSWORD: $MYSQL_PASSWORD
+    depends_on:
+      - db
+  db:
+    image: "mysql:5.7"
+    volumes:
+      - ./mysql-storage:/var/lib/mysql
+    command: mysqld --character-set-server=utf8
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      MYSQL_DATABASE: "webapp"
+      MYSQL_USER: "webapp"
+      MYSQL_PASSWORD: $MYSQL_PASSWORD

@@ -1,0 +1,12 @@
+# python
+/.env
+/token.json
+/venv/
+__pycache__
+/tmp/
+
+# mysql
+/mysql-storage/
+
+# vscode
+/.vscode/
