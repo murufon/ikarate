@@ -13,6 +13,13 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
+## ライブラリなどのアップデート後
+```
+docker compose down
+docker compose build
+docker compose up -d
+```
+
 ## Dockerコマンド
 '''
 docker compose up -d

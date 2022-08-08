@@ -1,0 +1,17 @@
+<h1>index</h1>
+{{ data }}
+<br>
+{% if request.user.is_anonymous %}
+あなたはログインしていません
+<br>
+<button type="button" class="button"
+    onclick="location.href='{% url 'social:begin' 'twitter' %}?next={{ next }}'">
+    Twitter でログイン
+</button>
+{% else %}
+あなたはログインしています
+<br>
+{{ user.username }}さん
+{% endif %}
+<br>
+<a href="{% url 'logout' %}">ログアウト</a>

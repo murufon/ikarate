@@ -2,3 +2,4 @@ python-dotenv
 requests
 Django
 mysqlclient
+social-auth-app-django
