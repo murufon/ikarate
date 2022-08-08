@@ -18,6 +18,8 @@ python manage.py createsuperuser
 docker compose down
 docker compose build
 docker compose up -d
+docker compose exec webapp bash
+python manage.py migrate
 ```
 
 ## Dockerコマンド
