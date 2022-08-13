@@ -11,4 +11,5 @@ urlpatterns = [
     path('accounts/<int:pk>/', views.accounts_detail, name='accounts_detail'),
     path('main/', views.main, name='main'),
     path('nawa/', views.nawa, name='nawa'),
+    path('sample/', views.sample, name='sample'),
 ]

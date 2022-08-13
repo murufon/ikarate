@@ -31,3 +31,15 @@ def main(request):
 def nawa(request):
   
   return render(request, 'nawa.html')
+
+def sample(request):
+    messages = list()
+    messages.append({
+        "tags": "success",
+        "text": "募集を作成しました"
+    })
+    context = {
+        'messages': messages,
+        'title': 'サンプルページ'    
+    }
+    return render(request, 'app/sample/index.html', context)
