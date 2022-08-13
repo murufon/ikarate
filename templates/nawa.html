@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<body class="body2">
+{% block main %}
+
+
+<p class="text2">新規登録</p>
+
+<form>
+<div class="cp_iptxt">
+	<input class="ef" type="text" placeholder="">
+	<label>お名前</label>
+	<span class="focus_line"></span>
+</div>
+
+<div class="cp_iptxt">
+	<input class="ef" type="text" placeholder="">
+	<label>フレンドコード</label>
+	<span class="focus_line"></span>
+</div>
+
+<div class="mb-3">
+	<label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+
+</form>
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+
+{% endblock main %}
+</body>

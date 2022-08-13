@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+<!--{% if username == "shun" %}
+<h1>自分です</h1>
+{% elif username %}
+<h1>{{username}}さんようこそ！</h1>
+{% else %}
+<h1>匿名さん、ようこそ！</h1>
+{% endif %}-->
+<img src="{% static 'css/a.jpg' %}" class="img-fluid" alt="...">
+
+<p class="text">ガチレート</p>
+
+
+{% include  "_table.html" %}
+
+<p class="text">ガチナワバリ</p>
+
+
+{% include  "_table.html" %}
+
+<!--<ul class="list-group">
+  <li class="list-group-item-dark active" aria-current="true">1</li>
+
+</ul>-->
+{% endblock main %}

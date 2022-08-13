@@ -1,0 +1,100 @@
+.table-dark{
+    height: 100px;
+    line-height: 80px;
+    text-align: center;
+    border-collapse:  collapse;
+    background-color: black;
+    font-size: 3rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.list-group{
+    height: 200px;
+    line-height: 100px;
+    border-collapse:  collapse;
+
+    
+}
+
+.media-list{
+    background-color: rgb(126, 126, 126);
+    border-style:none;
+    border: none;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.td{
+    border: none;
+    
+
+}
+
+.table_layout{
+    table-layout: auto;
+    width: 500px;
+  }
+
+.th{
+    line-height: 100px;
+    text-align: left;
+  }
+  
+.tt{
+    border: none;
+    text-align: left;
+    White-space: nowrap;
+}
+.t{
+    border: none;
+}
+
+.text{
+    text-align: center;
+    font-size: 9rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+    border: none;
+    white-space: nowrap;
+}
+
+.text{
+    text-align: center;
+    font-size: 8rem;
+    font-family: 'Mochiy Pop One', sans-serif;
+    white-space: nowrap;
+}
+
+.text {
+    color: #494949;
+    border-bottom: dashed 5px #ffaf58;;
+  }
+
+  .body > .div {
+    /*背景色を見せるために、幅と高さを指定*/ 
+    width: 150px;
+    height: 50px;
+  }
+  
+  .first {
+    /*firstというクラスの要素の背景を青色にする*/   
+    background-color: blue;
+  }
+
+  .b-example-divider {
+    background-color: rgba(27, 23, 38, 0.338);
+    }
+    
+    
+    
+    .header{
+        padding-top: 100px; /*高さを下げて合わせる*/
+    }
+    
+    .body {
+        margin-left: 100px;
+        margin-right: 100px;
+       
+        background-image: linear-gradient(to right, rgb(219, 219, 191)3%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 97%, rgb(219, 219, 191) 97%)
+    }
+    

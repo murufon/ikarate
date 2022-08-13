@@ -22,3 +22,12 @@ def accounts_detail(request, pk):
         'data': 'Hello, world. You\'re at the app accounts detail page.',
     }
     return render(request, 'app/accounts/detail.html', context)
+
+
+def main(request):
+  
+  return render(request, 'main.html')
+
+def nawa(request):
+  
+  return render(request, 'nawa.html')
