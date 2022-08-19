@@ -12,4 +12,6 @@ urlpatterns = [
     path('main/', views.main, name='main'),
     path('nawa/', views.nawa, name='nawa'),
     path('sample/', views.sample, name='sample'),
+    path('boshuuran/', views.boshuuran, name='boshuuran'),
+    path('boshuu/', views.boshuu, name='boshuu'),
 ]

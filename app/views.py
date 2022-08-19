@@ -43,3 +43,11 @@ def sample(request):
         'title': 'サンプルページ'    
     }
     return render(request, 'app/sample/index.html', context)
+
+def boshuuran(request):
+  
+  return render(request, 'boshuuran.html')
+
+def boshuu(request):
+  
+  return render(request, 'boshuu.html')

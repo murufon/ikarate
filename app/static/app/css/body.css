@@ -63,12 +63,15 @@
     font-size: 8rem;
     font-family: 'Mochiy Pop One', sans-serif;
     white-space: nowrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.text {
+/*.text {
     color: #494949;
     border-bottom: dashed 5px #ffaf58;;
-  }
+    
+}*/
 
   .body > .div {
     /*背景色を見せるために、幅と高さを指定*/ 
@@ -95,6 +98,39 @@
         margin-left: 100px;
         margin-right: 100px;
        
-        background-image: linear-gradient(to right, rgb(219, 219, 191)3%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 97%, rgb(219, 219, 191) 97%)
+        background-image: linear-gradient(to right, rgba(255, 255, 0, 0.37)3%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 97%, rgba(255, 255, 0, 0.37) 97%)
     }
     
+.waku{
+    margin-top: 10px;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    height: 8rem;
+
+  background-color: #ffff00;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 600);
+}
+
+.tape{
+    display: block;
+    background-color: rgb(85, 85, 58);
+    opacity: 0.2;
+    transform: rotate(10deg);
+    width: 40%;
+    height: 35px;
+    margin: -2em auto 0 auto;
+    border-left: 3px dotted rgba(0,0,0,.1);
+    border-right: 3px dotted rgba(0,0,0,.1);
+ }
+
+.sen8{
+    padding-top: 2rem;
+    color: #000000;
+    border-bottom: dashed 2px #000000;;
+  }
+
+.sen0{
+    padding-bottom: 2rem;
+  }

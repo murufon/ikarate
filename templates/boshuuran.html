@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+<div class="waku">
+<div class="tape"></div>
+<p class="text3" >ガチレート</p>
+</div>
+
+<div class="sen8"></div>
+
+
+
+  <div align="center" class="botan" style="display: inline-block; _display: inline;">
+    <a href="#" class="btn-gradient-radius" >ぼしゅう</a>
+  </div>
+  <div class="select" style="display: inline-block; _display: inline;">
+    <select required >
+        <option value="" hidden>チームを選択してください</option>
+        <option value="1">cat</option>
+        <option value="2">dog</option>
+        <option value="3">rabbit</option>
+        <option value="4">squirrel</option>
+    </select>
+  </div>
+  <div align="center"style="display: inline-block; _display: inline;">
+    <a href="#" class="btn-gradient-radius" >けんさく</a>
+  </div>
+
+
+{% include  "_boshuuran.html" %}
+
+
+
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item"><a class="page-link" href="#">5</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+{% endblock main %}
