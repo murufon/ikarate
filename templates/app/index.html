@@ -4,10 +4,10 @@
 {% if request.user.is_anonymous %}
 あなたはログインしていません
 <br>
-<button type="button" class="button"
+{% comment %} <button type="button" class="button"
     onclick="location.href='{% url 'social:begin' 'twitter' %}?next={{ next }}'">
     Twitter でログイン
-</button>
+</button> {% endcomment %}
 {% else %}
 あなたはログインしています
 <br>

@@ -38,7 +38,8 @@
               </li>    
             {% else %}
             <li class="nav-item">
-                <a class="nav-link active" onclick="location.href='{% url 'social:begin' 'twitter' %}'" href="#">ログイン</a>
+              {% comment %} <a class="nav-link active" onclick="location.href='{% url 'social:begin' 'twitter' %}'" href="#">ログイン</a> {% endcomment %}
+              <a class="nav-link active" onclick="location.href='#'" href="#">ログイン</a>
             </li>
             {% endif %}
         </ul>
