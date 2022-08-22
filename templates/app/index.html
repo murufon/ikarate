@@ -4,10 +4,6 @@
 {% if request.user.is_anonymous %}
 あなたはログインしていません
 <br>
-{% comment %} <button type="button" class="button"
-    onclick="location.href='{% url 'social:begin' 'twitter' %}?next={{ next }}'">
-    Twitter でログイン
-</button> {% endcomment %}
 {% else %}
 <p>あなたはログインしています</p>
 <p>Django user database id: {{ user.id }}</p>
