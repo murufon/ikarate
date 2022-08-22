@@ -13,8 +13,8 @@ services:
       MYSQL_DATABASE: "webapp"
       MYSQL_USER: "webapp"
       MYSQL_PASSWORD: $MYSQL_PASSWORD
-      SOCIAL_AUTH_TWITTER_KEY: $SOCIAL_AUTH_TWITTER_KEY
-      SOCIAL_AUTH_TWITTER_SECRET: $SOCIAL_AUTH_TWITTER_SECRET
+    env_file:
+      - .env
     depends_on:
       - db
   db:

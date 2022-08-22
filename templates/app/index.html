@@ -9,11 +9,22 @@
     Twitter でログイン
 </button> {% endcomment %}
 {% else %}
-あなたはログインしています
-<br>
-{{ user.username }}さん
+<p>あなたはログインしています</p>
+<p>Django user database id: {{ user.id }}</p>
+<p>Django username: {{ user.username }}</p>
+<p>User is authenticated: {{ user.is_authenticated }}</p>
+<p>User is active: {{ user.is_active }}</p>
+<p>User last login: {{ user.last_login }}</p>
+<p>User date joined: {{ user.date_joined }}</p>
+<p>Twitter id: {{ user.twitter_user.twitter_id }}</p>
+<p>Twitter name: {{ user.twitter_user.name }}</p>
+<p>Twitter screen name: {{ user.twitter_user.screen_name }}</p>
+<p>Twitter profile image url: {{ user.twitter_user.profile_image_url }}</p>
+<p>Twitter oauth token: {{ user.twitter_user.twitter_oauth_token.oauth_token }}</p>
+<p>Twitter oauth token secret: {{ user.twitter_user.twitter_oauth_token.oauth_token_secret }}</p>
+<p>Twitter profile image:</p>
+<img src="{{ user.twitter_user.get_original_profile_image_url }}">
+<p><a href="{% url 'twitter_logout' %}">Logout</a></p>
 {% endif %}
-<br>
-<a href="{% url 'logout' %}">ログアウト</a>
 
-
+<p><a href="{% url 'twitter_login' %}">Login</a></p>

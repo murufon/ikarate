@@ -14,4 +14,10 @@ urlpatterns = [
     path('sample/', views.sample, name='sample'),
     path('boshuuran/', views.boshuuran, name='boshuuran'),
     path('boshuu/', views.boshuu, name='boshuu'),
+
+    # Twitter
+    path('authorization/twitter_login/', views.twitter_login, name='twitter_login'),
+    path('authorization/twitter_callback/', views.twitter_callback, name='twitter_callback'),
+    path('authorization/twitter_logout/', views.twitter_logout, name='twitter_logout'),
 ]
+
