@@ -1,54 +1,4 @@
-.table-dark{
-    height: 100px;
-    line-height: 80px;
-    text-align: center;
-    border-collapse:  collapse;
-    background-color: black;
-    font-size: 3rem;
-    font-family: 'Mochiy Pop One', sans-serif;
-}
 
-.list-group{
-    height: 200px;
-    line-height: 100px;
-    border-collapse:  collapse;
-
-    
-}
-
-.media-list{
-    background-color: rgb(126, 126, 126);
-    border-style:none;
-    border: none;
-    text-align: center;
-    font-size: 3rem;
-    font-family: 'Mochiy Pop One', sans-serif;
-}
-
-.td{
-    border: none;
-    
-
-}
-
-.table_layout{
-    table-layout: auto;
-    width: 500px;
-  }
-
-.th{
-    line-height: 100px;
-    text-align: left;
-  }
-  
-.tt{
-    border: none;
-    text-align: left;
-    White-space: nowrap;
-}
-.t{
-    border: none;
-}
 
 .text{
     text-align: center;
@@ -91,15 +41,18 @@
     
     
     .header{
-        padding-top: 100px; /*高さを下げて合わせる*/
+        padding-top: 200px; /*高さを下げて合わせる*/
     }
     
-    .body {
-        margin-left: 100px;
-        margin-right: 100px;
-       
-        background-image: linear-gradient(to right, rgba(255, 255, 0, 0.37)3%, rgb(255, 255, 255) 3%, rgb(255, 255, 255) 97%, rgba(255, 255, 0, 0.37) 97%)
-    }
+.body{
+  width: 100%;
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(21, 32, 43);
+  color: white;
+  padding-top: 100px;
+}
     
 .waku{
     margin-top: 10px;
@@ -132,5 +85,7 @@
   }
 
 .sen0{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
+
+

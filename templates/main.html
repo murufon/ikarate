@@ -10,17 +10,24 @@
 {% else %}
 <h1>匿名さん、ようこそ！</h1>
 {% endif %}-->
-<img src="{% static 'app/css/a.jpg' %}" class="img-fluid" alt="...">
+<div class="urlichi">
 
-<p class="text">ガチレート</p>
+<img src="{% static 'app/css/a.jpg' %}" class="img-fluid" alt="..." >
+
+<p><a href="{% url 'twitter_login' %}" class="twitter">
+<span><img src="{% static 'app/css/twitter.png' %}" class="img-fluid" alt="..."   width="30" height="30"></span>
+<span>新規登録・ログイン</span>
+</a></p>
+</div>
+
 
 
 {% include  "_table.html" %}
 
-<p class="text">ガチナワバリ</p>
 
 
-{% include  "_table.html" %}
+
+
 
 <!--<ul class="list-group">
   <li class="list-group-item-dark active" aria-current="true">1</li>

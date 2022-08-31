@@ -13,8 +13,9 @@ urlpatterns = [
     path('nawa/', views.nawa, name='nawa'),
     path('sample/', views.sample, name='sample'),
     path('boshuuran/', views.boshuuran, name='boshuuran'),
-    path('boshuu/', views.boshuu, name='boshuu'),
-
+    path('boshuuran1/', views.boshuuran1, name='boshuuran1'),
+    path('room/', views.room, name='room'),
+    path('mypage/', views.mypage, name='mypage'),
     # Twitter
     path('authorization/twitter_login/', views.twitter_login, name='twitter_login'),
     path('authorization/twitter_callback/', views.twitter_callback, name='twitter_callback'),

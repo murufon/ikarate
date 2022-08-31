@@ -1,4 +1,5 @@
-<header class="header">
+{% load static %}
+<!--<header class="header">
     <nav class="navigation">
       <ul>
         <li><a href="/">ホーム</a></li>
@@ -8,5 +9,67 @@
         <li><a href="">大会</a></li>
         <li><a href="">サーバー</a></li>
       </ul>
+     <li> <div class="headeracount">
+        <a href="mypage">
+        <img src="{% static 'app/css/11.png' %}" alt="" class="rounded-circle" width="70" height="70">
+        </a>
+      </div>
+      </li>
+    
+  </ul>
     </nav>
-  </header>
+    
+  </header>-->
+
+  <header class="sticky-top  text-white ">
+    <nav class="container navbar navbar-expand-md navbar-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="/main">ikarate</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="/boshuuran">ガチレート</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active text-white" href="/boshuuran1">ガチナワバリ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">対抗戦</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">大会</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="/mypage">マイページ</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                {% if user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        {{ user.username }}さん
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item text-white" href="#">プロフィール</a></li>
+                      <li><a class="dropdown-item text-white" href="#">設定</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item text-white" href="{% url 'twitter_logout' %}">ログアウト</a></li>
+                    </ul>
+                  </li>    
+                {% else %}
+                <li class="nav-item">
+                  <a class="nav-link active text-white" onclick="location.href='{% url 'twitter_login' %}'" href="#">ログイン</a>
+                </li>
+                {% endif %}
+            </ul>
+            {% comment %} <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> {% endcomment %}
+          </div>
+        </div>
+      </nav>
+    </header>

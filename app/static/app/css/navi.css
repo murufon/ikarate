@@ -1,10 +1,8 @@
 .navigation {
-    width: 100%;
-    height: 60px;
     background-color: #383737;
     width: 100%; /* 幅いっぱいを指定 */
-    height: 100px; /* 高さを50pxに指定 */
-    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    height: 90px; /* 高さを50pxに指定 */
+   padding-top: 2rem; /* ヘッダーに上下左右それぞれ余白を指定 */
     box-sizing: border-box; /* padding分を含んで幅を100%にするため */
   position: fixed; /* ウィンドウを基準に画面に固定 */
   top: 0; /* 上下の固定位置を上から0pxにする */
@@ -24,7 +22,29 @@
     color: #fff;
     text-decoration: none;
   }
-
+ .headeracount{
+  list-style: none;
+  margin-left: 40rem;
+ }
 .body2{
   background-color: #fff;
+}
+
+.container {
+  background-color: hsl(216,calc(var(--saturation-factor, 1)*7.2%),13.5%);
+  color: #fff;
+  width: 200%;
+}
+.sticky-top{
+  background-color: hsl(216,calc(var(--saturation-factor, 1)*7.2%),13.5%);
+  width: 100%; /* 幅いっぱいを指定 */
+  height: 90px; /* 高さを50pxに指定 */
+ padding-top: 2rem; /* ヘッダーに上下左右それぞれ余白を指定 */
+  box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+ position: fixed; /* ウィンドウを基準に画面に固定 */
+ top: 0; /* 上下の固定位置を上から0pxにする */
+ left: 0; /* 左右の固定位置を左から0pxにする */
+ display: flex; /* 中の要素を横並びにする */
+ align-items: center; /* 中の要素を上下中央に並べる */
+ z-index: 9999;/*かくれないようにする*/
 }

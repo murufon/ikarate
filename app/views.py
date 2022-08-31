@@ -55,9 +55,17 @@ def boshuuran(request):
   
   return render(request, 'boshuuran.html')
 
-def boshuu(request):
+def boshuuran1(request):
   
-  return render(request, 'boshuu.html')
+  return render(request, 'boshuuran1.html')
+
+def room(request):
+  
+  return render(request, 'room.html')
+
+def mypage(request):
+  
+  return render(request, 'mypage.html')
 
 
 def twitter_login(request):
