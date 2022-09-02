@@ -58,6 +58,8 @@
     margin-top: 2rem;
     clear: both;
     list-style: none;
+    height: 100%;
+    margin-bottom: 2rem;
 }
 
 .input-group-lg{
@@ -78,7 +80,7 @@
     list-style: none;
     background-color: gray;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     float: left;
     width: calc(20%);
     text-align: center;
@@ -93,30 +95,24 @@
 
 
 .ul3{
-    list-style-type: disc;
    
-    padding-inline-start: 0px;
-    background-color: transparent;
-    margin-top: 10rem;
-    clear: both;
-    list-style: none;
+    margin: 0;
+    padding-inline-start: 0px; /**/
+
 }
 
 .ran1{
     list-style: none;
     background-color: gray;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     float: left;
     width: calc(40%);
-    margin-top: 1rem;
-}
-
-.ran1{
-    padding: 0.5em 1em;
-   
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.43em 1em;
     background: #ff737339;
-    border-left: solid 0.3rem #d41500;
+    border-left: solid 0.3rem #2c2c2c;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
 }
 
@@ -124,15 +120,12 @@
     list-style: none;
     background-color: gray;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     float: left;
     width: calc(40%);
-    margin-top: 1rem;
-}
-
-.ran2{
-    padding: 0.5em 1em;
-   
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.43em 1em;
     background: hsl(220,calc(var(--saturation-factor, 1)*7.7%),22.9%);
     border-left: solid 0.3rem #2c2c2c;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
@@ -142,18 +135,14 @@
     list-style: none;
     background-color: gray;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     float: left;
     width: calc(80%);
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: center;
-}
-
-.ran3{
-    padding: 0.5em 1em;
-   
+    padding: 0.43em 1em;
     background: #faff7339;
-    border-left: solid 0.3rem #ffe83d;
+    border-left: solid 0.3rem #2c2c2c;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
 }
 

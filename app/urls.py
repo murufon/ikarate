@@ -13,9 +13,11 @@ urlpatterns = [
     path('nawa/', views.nawa, name='nawa'),
     path('sample/', views.sample, name='sample'),
     path('boshuuran/', views.boshuuran, name='boshuuran'),
-    path('boshuuran1/', views.boshuuran1, name='boshuuran1'),
+    path('nawabari/', views.nawabari, name='nawabari'),
+    path('taikousen/', views.taikousen, name='taikousen'),
     path('room/', views.room, name='room'),
     path('mypage/', views.mypage, name='mypage'),
+    path('teammake/', views.teammake, name='teammake'),
     # Twitter
     path('authorization/twitter_login/', views.twitter_login, name='twitter_login'),
     path('authorization/twitter_callback/', views.twitter_callback, name='twitter_callback'),

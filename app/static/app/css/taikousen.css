@@ -1,0 +1,106 @@
+
+
+.ran4{
+    list-style: none;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    float: left;
+    width: calc(20%);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    background: #faff7339;
+    border-left: solid 0.3rem #2c2c2c;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.ran5{
+    list-style: none;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    float: left;
+    width: calc(40%);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    background: #faff7339;
+    border-left: solid 0.3rem #2c2c2c;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.ran6{
+    list-style: none;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    float: left;
+    width: calc(20%);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    background: #ff737339;
+    border-left: solid 0.3rem #2c2c2c;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.ran7{
+    list-style: none;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    float: left;
+    width: calc(40%);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    background: #ff737339;
+    border-left: solid 0.3rem #2c2c2c;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.ran8{
+    list-style: none;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    float: left;
+    width: calc(20%);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    
+    background: hsl(220,calc(var(--saturation-factor, 1)*7.7%),22.9%);
+    border-left: solid 0.3rem #2c2c2c;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.ran9{
+    list-style: none;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    float: left;
+    width: calc(40%);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding: 0.5em 1em;
+    
+    background: hsl(220,calc(var(--saturation-factor, 1)*7.7%),22.9%);
+    border-left: solid 0.3rem #2c2c2c;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+.ran10{
+    list-style: none;
+    background-color: gray;
+    color: white;
+    font-size: 1.5rem;
+    float: left;
+    width: calc(20%);
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-top: 0.5rem;
+    background: hsl(223,calc(var(--saturation-factor, 1)*6.9%),19.8%);
+}

@@ -55,9 +55,13 @@ def boshuuran(request):
   
   return render(request, 'boshuuran.html')
 
-def boshuuran1(request):
+def nawabari(request):
   
-  return render(request, 'boshuuran1.html')
+  return render(request, 'nawabari.html')
+
+def taikousen(request):
+  
+  return render(request, 'taikousen.html')
 
 def room(request):
   
@@ -66,6 +70,10 @@ def room(request):
 def mypage(request):
   
   return render(request, 'mypage.html')
+
+def teammake(request):
+  
+  return render(request, 'teammake.html')
 
 
 def twitter_login(request):

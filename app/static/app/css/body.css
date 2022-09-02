@@ -1,21 +1,5 @@
 
 
-.text{
-    text-align: center;
-    font-size: 9rem;
-    font-family: 'Mochiy Pop One', sans-serif;
-    border: none;
-    white-space: nowrap;
-}
-
-.text{
-    text-align: center;
-    font-size: 8rem;
-    font-family: 'Mochiy Pop One', sans-serif;
-    white-space: nowrap;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /*.text {
     color: #494949;
@@ -79,9 +63,9 @@
  }
 
 .sen8{
-    padding-top: 2rem;
-    color: #000000;
-    border-bottom: dashed 2px #000000;;
+    padding-top: 1rem;
+    color: rgba(128, 128, 128, 0.595);
+    border-bottom: solid 2px rgba(128, 128, 128, 0.595);
   }
 
 .sen0{

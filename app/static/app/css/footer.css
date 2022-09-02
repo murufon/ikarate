@@ -1,0 +1,40 @@
+.a{
+    width: 100%;
+    background: #eeffcc;
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+}
+
+body > #a {
+    height: auto;
+}
+
+.b{
+    bottom: 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: #89c7de;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+
+ position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+
+ul {
+    overflow: hidden;
+  }
+
+  ul:before, ul:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+
+.b-example-divider{
+    margin-top: 5rem;
+}
