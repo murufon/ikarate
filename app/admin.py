@@ -26,9 +26,12 @@ class AdminUserAdmin(UserAdmin):
         ),
         (_("Important dates"), {"fields": ("last_login", "date_joined")}),
     )
-    list_display = ("username", "is_staff")
+    list_display = ("username", "twitter_screen_name", "is_staff")
     search_fields = ("username",)
-    pass
+    def twitter_screen_name(self, obj):
+        return obj.twitter_user.screen_name
+    twitter_screen_name.short_description = 'Twitter ID'
+    twitter_screen_name.admin_order_field = 'twitter_user__screen_name'
 
 admin.site.register(TwitterAuthToken)
 admin.site.register(TwitterUser)
